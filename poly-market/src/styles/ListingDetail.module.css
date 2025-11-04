@@ -1,0 +1,153 @@
+/* Layout */
+.pageWrapper {
+  background: #f8fafc;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Top Bar */
+.topBar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: none;
+  font-size: 0.95rem;
+  color: #3b82f6;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.backButton:hover {
+  color: #1d4ed8;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.category {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Image */
+.image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.imagePlaceholder {
+  height: 320px;
+  background: #e5e7eb;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9ca3af;
+  margin-bottom: 1.5rem;
+}
+
+/* Description */
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #374151;
+  margin-bottom: 2rem;
+}
+
+/* Stats */
+.statsBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3f4f6;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.8rem;
+}
+
+.statsBox span {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.statsBox strong {
+  color: #111827;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.status {
+  text-transform: capitalize;
+}
+
+/* Buttons */
+.actionButtons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.button {
+  flex: 1;
+  border: none;
+  padding: 1rem 0;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.yes {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  box-shadow: 0 4px 10px rgba(34, 197, 94, 0.25);
+}
+
+.no {
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+  box-shadow: 0 4px 10px rgba(239, 68, 68, 0.25);
+}

@@ -1,0 +1,56 @@
+body {
+    background: white;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .nav-links a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .container {
+    padding: 2rem;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  th, td {
+    padding: 0.8rem;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+  }
+  
+  .btn {
+    background: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .status.pending { color: gray; }
+  .status.completed { color: green; }
+  .status.cancelled { color: red; }
+  
+  .card {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+  
