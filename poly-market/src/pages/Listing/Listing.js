@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import styles from "../../styles/listing.module.css";
 import { useRouter } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { Link, Menu, X } from "lucide-react";
 
 const BACKEND_URL = "http://localhost:5000";
 
@@ -73,18 +73,18 @@ export default function ListingPage() {
             <h2 className={styles.sidebarTitle}>Navigation</h2>
             <ul className={styles.sidebarLinks}>
               <li>
-                <a href="/Listing/Listing">Dashboard</a>
+                <Link href="/Listing/Listing">Dashboard</Link>
               </li>
               <li>
-                <a href="/Listing/Listing" className={styles.active}>
+                <Link href="/Listing/Listing" className={styles.active}>
                   Listings
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/Orders/OrderListing">Orders</a>
+                <Link href="/Orders/OrderListing">Orders</Link>
               </li>
               <li>
-                <a href="/Listing/settings">Settings</a>
+                <Link href="/Listing/settings">Settings</Link>
               </li>
             </ul>
           </aside>

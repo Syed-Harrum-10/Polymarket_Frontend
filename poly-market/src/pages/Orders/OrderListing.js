@@ -1,3 +1,5 @@
+import OrderItem from "@/components/OrderItem";
+
 export default function OrderListing({ orders }) {
     const orderArray = Array.isArray(orders)
       ? orders
