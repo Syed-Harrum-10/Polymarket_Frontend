@@ -1,4 +1,4 @@
-import OrderItem from "@/components/OrderItem";
+import OrderItem from "./OrderItem";
 
 export default function OrderListing({ orders }) {
     const orderArray = Array.isArray(orders)

@@ -2,7 +2,8 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { ArrowLeft } from 'lucide-react';
-import styles from '../../styles/listingDetail.module.css';
+import styles from '../../styles/ListingDetail.module.css';
+import Image from 'next/image';
 
 export default function ListingDetailsPage() {
   const router = useRouter();
@@ -70,7 +71,7 @@ export default function ListingDetailsPage() {
           </div>
 
           {listing.asset?.url ? (
-  <img
+  <Image
     src={
       listing.asset.url.startsWith('/uploads/')
         ? `http://localhost:5000${listing.asset.url}`

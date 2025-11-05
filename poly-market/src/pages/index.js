@@ -1,4 +1,4 @@
-import ListingPage from "@/components/ListingPage";
-import withAuth from "@/utils/withAuth";
+import ListingPage from "../pages/Listing/Listing";
+import withAuth from "./Utility/withAuth";
 
 export default withAuth(ListingPage);

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import styles from "../../styles/listing.module.css";
 import { useRouter } from "next/navigation";
 import { Link, Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const BACKEND_URL = "http://localhost:5000";
 
@@ -119,7 +120,7 @@ export default function ListingPage() {
                 >
                   <div className={styles.cardImage}>
                     {listing.asset?.url ? (
-                      <img
+                      <Image
                         src={`${BACKEND_URL}${listing.asset.url}`}
                         alt={`Listing ${listing.id}`}
                       />
