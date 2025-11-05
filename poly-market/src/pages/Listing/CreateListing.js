@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import styles from '../../styles/CreateListing.module.css';
 
-const BACKEND_URL = 'http://localhost:5000';
+const BACKEND_URL = 'https://poly-market-backend.vercel.app';
 
 export default function CreateListingPage() {
   const router = useRouter();

@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { Link, Menu, X } from "lucide-react";
 import Image from "next/image";
 
-const BACKEND_URL = "http://localhost:5000";
+const BACKEND_URL = "https://poly-market-backend.vercel.app";
 
 export default function ListingPage() {
   const router = useRouter();

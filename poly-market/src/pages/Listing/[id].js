@@ -17,7 +17,7 @@ export default function ListingDetailsPage() {
 
     const fetchListing = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/listing/${id}`);
+        const res = await fetch(`https://poly-market-backend.vercel.app/listing/${id}`);
         if (!res.ok) throw new Error('Failed to fetch listing');
         const json = await res.json();
         setListing(json.data);

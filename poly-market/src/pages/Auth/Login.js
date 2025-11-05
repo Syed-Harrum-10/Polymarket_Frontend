@@ -21,10 +21,10 @@ export default function LoginPage() {
     setLoading(true);
 
     try {
-      const res = await fetch('http://localhost:5000/auth/login', {
+      const res = await fetch('https://poly-market-backend.vercel.app/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        credentials: 'include', // ✅ ADDED - allows cookies to be sent/received
+        credentials: 'include', 
         body: JSON.stringify({ email, password, wallet_address: walletAddress }), // ✅ Fixed: use wallet_address to match backend
       });
 

@@ -1,7 +1,7 @@
 "use client";
 
 export default function OrderItem({ order }) {
-  if (!order) return null; // Prevent rendering if order is undefined
+  if (!order) return null;
 
   return (
     <div className="order-card">
